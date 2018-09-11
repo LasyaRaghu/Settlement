@@ -14,14 +14,17 @@ public class DemoArrayList {
        l.add(23);
        System.out.println("size:"+l.size());
        l.add(2, 200);
+       //l.add("hello");
+       l.add(12.12d);
        System.out.println("list contained:"+l);
-       Iterator it = l.iterator();
+       Iterator<Integer> it = l.iterator();
        while(it.hasNext())
        {
-    	   Object o=it.next();
-    	   Integer i=(Integer)o;
-    	   System.out.println(i.intValue());
+    	  Integer data= it.next();
+    	   
+    	   System.out.println(data);
        }
+       System.out.println(l.get(2));
 	}
 
 }
