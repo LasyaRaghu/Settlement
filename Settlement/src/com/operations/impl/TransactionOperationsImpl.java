@@ -25,7 +25,7 @@ public class TransactionOperationsImpl implements TransactionOperations {
 			{
 				String compName = set.getString("companyName");
 				String pass=set.getString("password");
-				if(compName.equals(username) && pass.equals(password)){
+				if((compName.equals(username) && pass.equals(password))){
 					return true;
 				}
 				

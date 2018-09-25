@@ -14,5 +14,5 @@ public interface TransactionOperations {
   List<Transaction> findTransactionBySecurity(String securityName);
   List<Transaction> findTransactionByBuyer(String buyerCompanyId);
   List<Transaction> findTransactionBySeller(String sellerCompanyId);
-  List<float> 
+   
 }
